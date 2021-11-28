@@ -1,2 +1,3 @@
 # web-portofolio
-iseng
+jangan main asal ambil
+bilang
