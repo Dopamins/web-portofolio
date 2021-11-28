@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adhitya dhani pradana</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="main" class="center">
+      <div id="particles-js"></div>
+      <div class="user_info">
+        <h1 class="user_name">Adhitya Dhani</h1>
+        <p>Mahasiswa Sistem Informasi</p>
+        <a href="#About" class="btn">Tentang Saya</a>
+      </div>
+      <div class="user_img">
+        <img src="dhn.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about center" id="About">
+    <div class="center">
+      <h1 class="about_heading">Tentang Saya</h1>
+      <p>
+        Halo! Nama saya Adhitya Dhani, dan saya adalah seorang mahasiswa.
+        Saya memiliki berbagai kemampuan, mulai dari desain,
+        Video Editing, Audio editing dan sedikit menguasai HTML, CSS, Javascript.
+      </p>
+    </div>
+        <img src="img.png" alt="">
+    </section>
+    <section class="skills center" id="Skills">
+      <p class="skill_head">Skills / Kemampuan</p>
+      <div class="skill_box center">
+        <div class="box">
+          <i class="fab fa-html5 fa-4x"></i>
+          <p>HTML</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-css3-alt fa-4x"></i>
+          <p>CSS</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-js-square fa-4x"></i>
+          <p>Javascript</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-file-video fa-4x"></i>
+          <p>Video Editing</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-file-audio fa-4x"></i>
+          <p>Audio Editing</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-fill-drip fa-4x"></i>
+          <p>Desain</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="center">
+      <h1>Stay Connected</h1>
+      <div class="social_media_icons">
+        <a href="https://www.instagram.com/adhityadhn/" target="_blank_"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://github.com/adhityadhani" target="_blank_"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UC51mahGSHRhhxkUxF89dsCQ"
+          target="_blank_"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/dani.boengoer/"
+          target="_blank_"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Toggle -->
+    <div class="toggle center active" id="toggle">
+      <div class="box center">
+          <a href="#main" class="links center"> 
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </a>
+      </div>
+      <div class="box center">
+          <a href="#About" class="links center"> 
+            <i class="fas fa-address-card"></i>
+            <p>About</p>
+          </a>
+        <input type="checkbox" name="" id="btn" />
+          <a href="#Skills" class="links center"> 
+            <i class="fas fa-sliders-h"></i>
+            <p>Skills</p>
+          </a>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script>
+      const toggle = document.getElementById("toggle");
+      const btn = document.getElementById("btn");
+      const links = document.querySelectorAll(".links");
+
+      btn.addEventListener("click", (e) => {
+        toggle.classList.toggle("active");
+      });
+      links.forEach((e) => {
+        e.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        })
+      });
+    </script>
+  </body>
+</html>
